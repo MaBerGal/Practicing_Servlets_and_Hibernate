@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26-feb-2024 4:40:59 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Compra" table="COMPRA" schema="USUARIO" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="idUsuario" type="string">
+            <column name="ID_USUARIO" length="20" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="DESCRIPCION" length="20" />
+        </property>
+        <property name="precio" type="double">
+            <column name="PRECIO" precision="8" scale="2" />
+        </property>
+        <property name="fecha" type="date">
+            <column name="FECHA" length="10" />
+        </property>
+        <property name="imagen" type="string">
+            <column name="IMAGEN" />
+        </property>
+    </class>
+</hibernate-mapping>

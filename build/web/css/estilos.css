@@ -1,0 +1,393 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+/* Estilos generales para el cuerpo de la página */
+.bodyFondo {
+    background-image: url("../images/fondo.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Estilos para el contenido de la pestaña de inicio de sesión */
+#loginTab-content,
+#registerTab-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Estilos para el contenedor div */
+div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto; /* Centro el contenedor horizontalmente */
+    text-align: center; /* Centra el texto dentro del div */
+}
+
+
+
+/* Estilos para los campos de entrada en el formulario */
+input {
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos al pasar el ratón sobre el botón de envío en el formulario */
+input[type="submit"] {
+    background-color: #8e44ad;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+/* Estilos al pasar el ratón sobre el botón de envío en el formulario */
+input[type="submit"]:hover {
+    background-color: #6c3483;
+}
+
+/* Efecto al pasar el ratón sobre el botón "Borrar" */
+form .botonBorrar[type="submit"] {
+    background-color: #cc0000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+/* Efecto al pasar el ratón sobre el botón "Borrar" */
+form .botonBorrar[type="submit"]:hover {
+    background-color: #cc0000;
+}
+
+/* Efecto al pasar el ratón sobre el botón "Agregar" */
+form .botonAgregar[type="submit"] {
+    background-color: #007f5f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+/* Efecto al pasar el ratón sobre el botón "Agregar" */
+form .botonAgregar[type="submit"]:hover {
+    background-color: #007f5f;
+}
+
+/* Efecto al pasar el ratón sobre el botón "Redireccionar" */
+form .botonRedireccionar[type="submit"] {
+    background-color: #0052cc;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+/* Efecto al pasar el ratón sobre el botón "Redireccionar" */
+form .botonRedireccionar[type="submit"]:hover {
+    background-color: #0052cc;
+    color: #fff;
+}
+
+/* Efecto al pasar el ratón sobre el botón "Cerrar Sesión" */
+form .botonCerrarSesion[type="submit"] {
+    background-color: #1a1a1a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+/* Efecto al pasar el ratón sobre el botón "Cerrar Sesión" */
+form .botonCerrarSesion[type="submit"]:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+/* Estilos para el elemento de selección (dropdown) */
+select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Estilos al pasar el ratón sobre los enlaces */
+a:hover {
+    color: #2980b9;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los encabezados de sección */
+h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el artículo (elemento de lista) */
+article {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #f8f8ff;
+    display: flex; /* Establecer una disposición en fila */
+    align-items: center; /* Centra verticalmente el contenido del artículo */
+}
+
+/* Establecer una disposición en fila */
+article:hover {
+    box-shadow: 0 0 20px rgba(140, 68, 198, 0.8); /* Aplicar el brillo al pasar el ratón */
+}
+
+/* Estilos para los elementos botón */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos al pasar el ratón sobre el botón */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Estilos para celdas de encabezado y celdas de datos en la tabla */
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #7bd0b5;
+}
+
+/* Fondo alternado para filas pares en la tabla */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos al pasar el ratón sobre filas en la tabla */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para la clase elemento (artículos) */
+.elemento {
+    cursor: pointer;
+}
+
+/* Estilos para las imágenes en la lista */
+.imgLista {
+    max-width: 400px;
+    max-height: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Estilos para las imágenes del Zodiaco */
+.imgZodiaco {
+    max-width: 512px;
+    max-height: 512px;
+    padding-left: 20px;
+}
+
+
+/* Estilos para los campos de entrada en el formulario */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para el botón de envío en el formulario */
+input[type="submit"] {
+    background-color: #8e44ad;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos al pasar el ratón sobre el botón de envío en el formulario */
+input[type="submit"]:hover {
+    background-color: #6c3483; 
+}
+
+/* Estilos para los enlaces */
+.aIndex {
+    color: #FFC0CB;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+/* Estilos al pasar el ratón sobre los enlaces */
+.aIndex:hover {
+    color: #1d6fa5;
+    background-color: #FFC0CB; 
+}
+
+/* Agrega estilos para las pestañas */
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tab.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilos específicos para la página de índice */
+.h1Index {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #8e44ad; 
+}
+
+.bodyIndex {
+    background-image: url("../images/fondo.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Estilos para el pie de página */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para el mensaje de error de validación */
+.errorValidacion {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #ff0000; /* Rojo */
+    margin-top: 5px; /* Espacio superior */
+    margin-bottom: 5px; /* Espacio inferior */
+    font-family: 'Courier New', monospace; /* Fuente monoespaciada */
+}
+
+
+/* Estilos para el elemento de navegación */
+nav {
+    background-color: #3498db;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos para los enlaces dentro del elemento de navegación */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos al pasar el ratón sobre los enlaces de navegación */
+nav a:hover {
+    background-color: #2980b9;
+    color: yellow;
+}
+
+
+
+/* Estilos específicos para la página de índice */
+.bodyIndex {
+    background-image: url("../images/fondo.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+header {
+    color: #000099;
+}
+
+footer {
+    color: black;
+}
+
+/* Estilos para el elemento aside */
+aside {
+    background-color: transparent;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    right: 0;
+}
